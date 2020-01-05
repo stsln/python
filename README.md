@@ -1,1 +1,1 @@
-# python
+Burimov Stepan
