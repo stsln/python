@@ -5,6 +5,14 @@ from pyrob.api import *
 
 @task
 def task_8_27():
+    while not cell_is_filled():
+        move_up()
+    move_right()
+    if cell_is_filled():
+        pass
+    else:
+        move_left(2)
+        pass
     pass
 
 

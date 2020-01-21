@@ -5,6 +5,17 @@ from pyrob.api import *
 
 @task
 def task_8_28():
+    while wall_is_above():
+        if not wall_is_on_the_left():
+            move_left()
+        elif not wall_is_on_the_right():
+            while wall_is_above():
+                move_right()
+
+    while not wall_is_above():
+        move_up()
+    while not wall_is_on_the_left():
+        move_left()
     pass
 
 
