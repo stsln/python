@@ -14,4 +14,20 @@ def foo(x):
 2) интерфейсы модулей
 3) ответственность модулей
 
-До 34:26
+from model import *
+from view import * 
+Произойдет конфликт имён!
+
+import tkinter as tk
+tk. #дальше вместо tkinter можно использовать tk
+
+__name__ #служебные (встроенные) переменные
+
+from library import foo #можно брать не все функции, а часть перечисляя через запятаю
+
+Правило LEGB
+
+1) local
+2) en.. (unlocal)
+3) global
+4) builtins
