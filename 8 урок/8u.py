@@ -17,7 +17,9 @@ https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
 
 class Ball
 
-свойства: x, y, dx, dy, R, color
+свойства: x, y, dx, dy, R
+color
+ballid
 
 методы:
 __init__(...)
