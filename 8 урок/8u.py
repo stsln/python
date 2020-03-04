@@ -27,4 +27,3 @@ move()
 show()
 check_inside(x, y)
 check_collisoin(ball)
-
