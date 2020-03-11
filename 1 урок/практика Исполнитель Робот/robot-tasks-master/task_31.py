@@ -3,10 +3,9 @@
 from pyrob.api import *
 
 
-@task(delay=0.03)
+@task(delay=0.01)
 def task_8_30():
     same_floor = 0
-    i = 0
     while same_floor < 2:
         while not wall_is_beneath():
             move_down()
