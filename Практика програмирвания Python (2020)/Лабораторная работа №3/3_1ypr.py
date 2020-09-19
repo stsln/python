@@ -1,5 +1,4 @@
 import turtle
-import ast
 from random import *
 
 window = turtle.Screen()
@@ -11,7 +10,7 @@ t.width(2)
 
 with open('3_2ypr.txt', 'r') as digits:
     digits = digits.read()
-digits = ast.literal_eval(digits)
+digits = eval(digits)
 
 
 def font_mail(text):
