@@ -36,7 +36,7 @@ print("Потраченные деньги на покупку без комис
 print("Полученные деньги без комиссии и дивидендов: ", sum_trans_pts)
 print("Комиссии за сделки: ", sum_com_trans_ptp + sum_com_trans_pts)
 print("Дивиденды акции: ", sum_trans_td)
-com = ((sum_trans_pts + sum_trans_td) - sum_trans_ptp) * 0.13 \
+com = ((sum_trans_pts + sum_trans_td) - sum_trans_ptp) * 0.13 + sum_com_trans_ptp + sum_com_trans_pts \
     if ((sum_trans_pts + sum_trans_td) - sum_trans_ptp) * 0.13 > 0 else 0 + sum_com_trans_ptp + sum_com_trans_pts
 print("Комиссии и налоги: ", com)
 profit = (sum_trans_pts + sum_trans_td) - sum_trans_ptp - com
